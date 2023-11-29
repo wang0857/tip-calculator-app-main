@@ -1,0 +1,33 @@
+/* Overall Setting */
+@import './_variables.scss';
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body {
+    background-color: $light-gray-cyan;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+
+    & > * {
+        font-family: 'Space Mono', monospace;
+        font-size: 24px;
+        color: $dark-gray-cyan;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        justify-content: initial;
+    }
+}
